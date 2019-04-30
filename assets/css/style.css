@@ -1,0 +1,237 @@
+html{
+    font-family: "Courier New", serif;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color:#F4F4F4;
+  height: 100%;
+  width: 100%;
+}
+
+#left {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  left: 0px;
+  background-color: #08494D;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: visible;
+  z-index: 0;
+}
+
+#profile-pic {
+  position: relative;
+  /*overflow: hidden;*/
+  top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 75%;
+  width: 75%;
+  z-index: 2;
+  display: 100%;
+}
+
+#profile-pic img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+#name {
+  position: relative;
+  /*padding-top:10px;*/
+  font-size: 30px;
+  font-weight: normal;
+  color: #F4F4F4;
+  z-index: 3;
+  margin-top: 0;
+  margin-left: 50%;
+  /*margin-bottom: 10px;*/
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#line1 {
+  position: fixed;
+  left: 30%;
+  top: 20%;
+  z-index: 1;
+}
+
+#line2 {
+  position: fixed;
+  left: 30%;
+  top: 25%;
+  z-index: 1;
+}
+
+#line3 {
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  z-index: 1;
+}
+
+#circle1 {
+  /*border-radius: 50%;*/
+  position: absolute;
+  top: -30%;
+  left: 85%;
+  overflow: visible;
+  height: 60%;
+  width: 60%;
+  z-index: 0;
+}
+
+#circle1 img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #4992FF;
+}
+
+.circle:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
+#circle2 {
+  position: absolute;
+  top: -5%;
+  left: 95%;
+  overflow: visible;
+  height: 85%;
+  width: 85%;
+  z-index: 2;
+}
+
+#circle2 img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #FF4F4F;
+}
+
+#circle3 {
+  position: absolute;
+  top: 40%;
+  left: 85%;
+  overflow: visible;
+  height: 120%;
+  width: 120%;
+  z-index: 2;
+
+}
+
+#circle3 img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #FFF06D;
+}
+
+#word1 {
+  position: absolute;
+  top: -17%;
+  right: 20%;
+  transform: rotate(-12deg);
+  color: #08494D;
+  font-size: 25px;
+}
+
+#word2 {
+  position: absolute;
+  top: 10%;
+  right: 7%;
+  transform: rotate(-2deg);
+  color: #08494D;
+  font-size: 25px;
+}
+
+#word3 {
+  position: absolute;
+  top: 55%;
+  right: 17%;
+  transform: rotate(10deg);
+  color: #08494D;
+  font-size: 25px;
+}
+
+/*work.html css*/
+
+#bluebar {
+  position: absolute;
+  top: 10%;
+  height: 5px;
+  width: 97%;
+  background-color: #4992FF;
+}
+#circle1w {
+  /*border-radius: 50%;*/
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  overflow: visible;
+  height: 100px;
+  width: 100px;
+  z-index: 0;
+  transform: translate( 0%, -50%);
+}
+
+#circle1w img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #4992FF;
+}
+
+#worktitle {
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: -20px;
+  right: 9%;
+  font-size: 30px;
+  color: #08494D;
+
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+  top: 50%;
+/*  height: 500px;*/
+  display: flex;
+  flex-direction: row;
+}
+
+
+#pictures {
+  /*position: relative;*/
+  margin-top: 30%;
+  left: 50%;
+  transform: translate(0%, -50%);
+/*  display: flex;
+  flex-direction: row;*/
+}
+
+.item img {
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+}
+
+.item {
+  position: relative;
+  float: left;
+  width:  500px;
+  height: 500px;
+  display: inline-block;
+  overflow: hidden;
+}
